@@ -1,6 +1,8 @@
 FROM maven:3-jdk-8
 
 RUN \
+  echo "deb http://ftp.de.debian.org/debian jessie-backports main" >> /etc/apt/sources.list && \
+  apt-get update && \
   apt-get install -y openjfx
 
 RUN mkdir -p /local/data
