@@ -17,4 +17,5 @@ RUN \
   rm -r UnlimitedJCEPolicyJDK8 && \
   rm jce_policy-8.zip
 
+WORKDIR /local/git
 
